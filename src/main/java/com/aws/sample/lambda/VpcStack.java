@@ -1,7 +1,5 @@
 package com.aws.sample.lambda;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import lombok.Getter;
 import software.amazon.awscdk.core.*;
 import software.amazon.awscdk.services.ec2.SubnetConfiguration;
@@ -18,8 +16,6 @@ public class VpcStack extends Stack {
                     String id,
                     SystemParameters parameters) {
         super(parent, id, null);
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         parameters.addTags(this, "vpc");
 
