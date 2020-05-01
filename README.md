@@ -1,19 +1,5 @@
-# Welcome to your CDK Java project!
+# API Gateway example
+This repo show example CDK to setup lambda API gateway integration, that's all. It is used to share a quick code reference.
 
-You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`LambdaStack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-It is a [Maven](https://maven.apache.org/) based project, so you can open this project with any Maven compatible Java IDE to build and run tests.
-
-## Useful commands
-
- * `mvn package`     compile and run tests
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
-
-Enjoy!
+# Deploy
+Run ````cdk deploy LambdaStack````. This will create a test VPC, lambda, API REST Gateway integration and documentation example.
